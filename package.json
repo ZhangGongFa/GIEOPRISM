@@ -1,0 +1,14 @@
+{
+  "name": "gieo-prism-gen5-static",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "GIEO PRISM static website — quiz, private CV PDF, external Google Form",
+  "scripts": {
+    "dev": "node tools/preview.mjs",
+    "start": "node tools/preview.mjs",
+    "check": "node --check assets/app.js && node --check assets/data.js && node --check config.js && node --check tools/preview.mjs",
+    "test": "node tests/smoke.mjs"
+  },
+  "engines": {"node": ">=20"}
+}
